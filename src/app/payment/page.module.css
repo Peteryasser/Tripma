@@ -1,0 +1,370 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+
+    background-color: white;
+}
+.pass{
+    /* Passenger information */
+
+position: relative;
+width: 252px;
+height: 33px;
+top: 50px;
+left: 96px;
+
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Purple Blue */
+color: #605DEC;
+margin-bottom: 0;
+
+}
+
+.enter{
+    position: relative;
+    top: 50px;
+    color: gray;
+    /* Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport. */
+
+    left: 96px;
+
+/* Body Large */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+/* Grey / 400 */
+color: #7C8DB0;
+margin-bottom: 0;
+width: 580;
+height: 150;
+}
+
+.paymentMethods {
+    /* Button Row */
+    position: relative;
+    left: 96px;
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 686px;
+    height: 48px;
+
+    /* Purple Blue */
+    border: 1px solid #605DEC;
+    border-radius: 4px;
+}
+
+.activeMethod {
+    /* button */
+    color: #FFFFFF;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* Purple Blue */
+    background: #605DEC;
+    border-radius: 4px;
+}
+
+.paymentOption {
+    color: #605dec;
+    /* button */
+    justify-content: center;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.paymentOption:hover {
+    background: #a6a5ff;
+    color: #fafafa;
+}
+
+
+.title{
+    position: relative;
+    margin-top: 30;
+    left: 96px;
+
+    /* Passenger 1 (Adult) */
+
+/* Header H4 */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Grey / 600 */
+color: #6E7491;
+
+
+}
+
+
+.check{
+    position: relative;
+    right: 650;
+}
+
+.checkLable{
+    position: relative;
+    bottom: 18px;
+    left: 115px;
+
+}
+
+.field{
+
+position: relative;
+width: 400px;
+margin: 10;
+padding: 10px;
+left: 86;
+border-radius: 5px;
+border-color: rgb(223, 223, 223);
+/* .base / text input */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 8px 12px;
+gap: 8px;
+
+height: 48px;
+
+/* True White */
+background: #FFFFFF;
+/* Grey / 300 */
+border: 1px solid #A1B0CC;
+border-radius: 4px;
+
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.other{
+
+    position: relative;
+    width: 190px;
+    margin: 10;
+    padding: 10px;
+    left: 86;
+    border-radius: 5px;
+    border-color: rgb(223, 223, 223);
+    /* .base / text input */
+    
+    box-sizing: border-box;
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 8px 12px;
+    gap: 8px;
+    
+    height: 48px;
+    
+    /* True White */
+    background: #FFFFFF;
+    /* Grey / 300 */
+    border: 1px solid #A1B0CC;
+    border-radius: 4px;
+}
+.chosen{
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+
+    position: absolute;
+    width: 400px;
+    height: 236px;
+    left: 976px;
+    top: 335px;
+}
+
+.confirm{
+    /* button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+
+position: absolute;
+width: 150px;
+height: 48px;
+left: 1270px;
+top: 780px;
+
+background: rgba(203, 212, 230, 0.3);
+/* Grey / 400 */
+border: 1px solid #7C8DB0;
+border-radius: 4px;
+cursor: pointer;
+
+}
+
+.buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.canTitle{
+    position: relative;
+width: 252px;
+height: 33px;
+top: 50px;
+left: 96px;
+
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Purple Blue */
+color: #687896;
+margin-bottom: 0;
+}
+
+.canDes{
+    position: relative;
+    top: 50px;
+    color: gray;
+    /* Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport. */
+
+    left: 96px;
+
+/* Body Large */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+/* Grey / 400 */
+color: #7C8DB0;
+margin-bottom: 0;
+width: 690;
+height: 150;
+}
+
+.policy{
+    color: #605DEC;
+    cursor: pointer;
+}
+
+.buttons{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 96;
+    margin-top: 40;
+    margin-bottom: 100;
+}
+
+.back{
+    /* button */
+
+box-sizing: border-box;
+
+
+padding: 12px 20px;
+gap: 8px;
+
+width: 160px;
+height: 48px;
+
+/* Purple Blue */
+border: 1px solid #605DEC;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+background-color: white;
+color: #605DEC;
+margin-right: 20;
+cursor: pointer;
+}
+
+.confirmEnd{
+    position: relative;
+    box-sizing: border-box;
+
+
+
+width: 160px;
+height: 48px;
+
+/* Purple Blue */
+border: 1px solid #605DEC;
+border-radius: 4px;
+
+
+background-color: 7C8DB0;
+color: #2b2b2b;
+margin-right: 20;
+cursor: pointer;
+
+}

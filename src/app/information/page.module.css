@@ -1,0 +1,404 @@
+.container{
+    width: 100%;
+    height: max-content;
+    /* background-color: #cf4242; */
+}
+.content{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pass{
+    /* Passenger information */
+
+position: relative;
+width: 252px;
+height: 33px;
+left: 96px;
+top: 50px;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Purple Blue */
+color: #605DEC;
+margin-bottom: 0;
+
+}
+
+.enter{
+    position: relative;
+    left: 96px;
+    top: 50px;
+    color: gray;
+    /* Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport. */
+
+
+/* Body Large */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+/* Grey / 400 */
+color: #7C8DB0;
+margin-bottom: 0;
+
+}
+
+.chosen{
+
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+
+    position: absolute;
+    width: 400px;
+    height: 236px;
+    left: 976px;
+    top: 335px;
+
+}
+
+.title{
+    position: relative;
+    left: 10px;
+
+    /* Passenger 1 (Adult) */
+
+/* Header H4 */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Grey / 600 */
+color: #6E7491;
+
+
+}
+
+.bagTitle{
+
+    /* Bag information */
+
+    position: relative;
+    left: 10px;
+
+
+/* Header H4 */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Grey / 600 */
+color: #6E7491;
+
+
+}
+
+.bagInfo{
+    /* Each passenger is allowed one free carry-on bag and one personal item. First checked bag for each passenger is also free. Second bag check fees are waived for loyalty program members. See the full bag policy. */
+
+    position: relative;
+    left: 10px;
+
+/* Body Large */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+/* Grey / 400 */
+color: #7C8DB0;
+
+
+}
+.passBags{
+
+    /* First Last */
+
+    margin-right: 250px;
+
+    
+
+/* Header H4 */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+
+/* Grey / 600 */
+color: #6E7491;
+
+
+}
+.form{
+    position: relative;
+    top: 80px;
+    left: 96px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.field{
+
+width: 150px;
+padding: 10px;
+margin: 10px;
+border-radius: 5px;
+border-color: rgb(223, 223, 223);
+/* .base / text input */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 8px 12px;
+gap: 8px;
+
+width: 200px;
+height: 48px;
+
+/* True White */
+background: #FFFFFF;
+/* Grey / 300 */
+border: 1px solid #A1B0CC;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.dob{
+    width: 200px;
+padding: 10px;
+margin: 10px;
+border-radius: 5px;
+/* .base / text input */
+
+
+    
+
+
+/* True White */
+background: #FFFFFF;
+/* Grey / 300 */
+border: 1px solid #A1B0CC;
+
+
+}
+
+.otherFields{
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+
+    /* .base / text input */
+
+
+
+/* True White */
+background: #FFFFFF;
+/* Grey / 300 */
+border: 1px solid #A1B0CC;
+
+
+}
+
+.emer{
+    position: relative;
+    top: 80px;
+    left: 96px;
+    display: flex;
+    flex-direction: column;
+}
+
+.check{
+    position: relative;
+    right: 735;
+}
+
+.checkLable{
+    position: relative;
+    left: 35px;
+    bottom: 18px;
+}
+
+.bagsForm{
+    position: relative;
+    top: 100px;
+    left: 96px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.firstRow{
+    margin: 20px;
+    margin-left: 0;
+    color: #787878;
+}
+
+.margins{
+    margin-right: 250px;    
+
+}
+
+.counter{
+    background-color: rgb(248, 248, 248);
+    border-style: none;
+    margin: 12px;
+    width: 40px;
+    margin-left: 12;
+    font-size:medium;
+    color: #605DEC;
+    cursor: pointer;
+}
+
+.policy{
+    color: #605DEC;
+    cursor: pointer;
+}
+
+.bag{
+    /* Illustration with text */
+
+position: absolute;
+width: 382px;
+height: 525px;
+left: 962px;
+top: 870px;
+
+
+}
+
+.select1{
+    /* button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 1270px;
+top: 780px;
+
+background: rgba(203, 212, 230, 0.3);
+/* Grey / 400 */
+border: 1px solid #7C8DB0;
+border-radius: 4px;
+cursor: pointer;
+
+}
+
+.buttons{
+    /* button row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: relative;
+width: 323px;
+height: 150px;
+top: 120;
+left: 90;
+
+}
+
+.select2{
+
+    box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+
+
+background: #cbd4e6;
+/* Grey / 400 */
+border: 1px solid #7C8DB0;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.save{
+    box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+color: #605DEC;
+
+
+background: white;
+/* Grey / 400 */
+border: 1px solid #7C8DB0;
+border-radius: 4px;
+cursor: pointer;
+
+}
+
+.link{
+    text-decoration: none;
+}
+
+

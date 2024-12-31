@@ -1,0 +1,33 @@
+.page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+    position: inherit;
+    
+}
+
+.head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.p {
+    color: #6E7491;
+    font-weight: 500;
+}
+
+.br {
+    display: block;
+}
+
+.body {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+

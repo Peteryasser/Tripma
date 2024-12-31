@@ -1,0 +1,366 @@
+.search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-height: 65px;
+    min-height: 48px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    height: 330px;
+}
+
+.menus{
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    height: fit-content;
+    align-items: center;
+    position: relative;
+}
+
+.placeInput {
+    display: flex;
+    width: 100%;
+    min-height: 30px;
+    height: 100%;
+    /*height: 35px;*/
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #CBD4E6;
+    position: relative;
+
+}
+
+.textInput {
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #7C8DB0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    max-height: 65px;
+    min-height: 30px;
+}
+
+.textInput::placeholder {
+    text-transform: capitalize;
+    color: #7C8DB0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+.drop {
+    list-style: none;
+    min-height: 60px;
+    position: absolute;
+    width: 90%;
+    max-height: 200px;
+    height: fit-content;
+    border-radius: 0.25rem;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    overflow: hidden; /* Hide scrollbars */
+    box-shadow: 1px 1px rgb(163, 173, 253);
+}
+
+.menu{
+    width: 100%;
+}
+
+.textButtons {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+
+    width: 112px;
+    height: 32px;
+    background: white;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.textButton:hover {
+    background-color: #605DEC;
+    color: #F6F6FE;
+}
+
+.date {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #CBD4E6;
+    position: relative;
+}
+
+.dateInput {
+    color: #7C8DB0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: 280px;
+}
+
+.person {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #CBD4E6;
+    position: relative;
+}
+
+.personInput {
+    color: #7C8DB0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.searchButton {
+    width: 100%;
+    height: 100%;
+    background-color: #605DEC;
+    color: #FAFAFA;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /*padding: 0 20px;*/
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    max-height: 65px;
+    min-height: 48px;
+    
+}
+
+.optionControls{
+    /* incrementer */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 112px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.optionButtons{
+    /* Increment */
+    border: none;
+    width: 32px;
+    height: 32px;
+    font-size: x-large;
+    /* Vector */
+
+    /* Purple Blue */
+    color: #605DEC;
+
+    /* Grey / 100
+
+    Provides a near-white grey that can be used to contrast against pure white.
+    */
+    background: #FAFAFA;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.searchButtonLg {
+    height: 100%;
+}
+
+.fullWidth {
+    width: 100%;
+    height: 100%;
+}
+
+.optionsMenu {
+    min-height: 60px;
+    margin-top: 10px;
+    position: absolute;
+    top: 30px;
+    /* Popover / Increment */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+
+    width: 232px;
+    height: 104px;
+
+    background: #FFFFFF;
+    border: 1px solid #CBD4E6;
+    /* elevation / medium */
+    box-shadow: 0px 2px 4px rgba(7, 4, 146, 0.1), 0px 24px 60px rgba(6, 47, 125, 0.05), 0px 12px 24px rgba(27, 59, 119, 0.05);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+
+.optionItem {
+    /* row */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 200px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    /*margin: 5px;*/
+    /*display: flex;*/
+    /*!*justify-content: space-between; !* This is equivalent to justify-between *!*!*/
+    /*align-items: center; !* This is equivalent to items-center *!*/
+}
+
+.textSpan{
+    /* label */
+
+    width: 80px;
+    height: 32px;
+
+    /* Body Default */
+    font-family: 'Nunito Sans', system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    /* Grey / 600 */
+    color: #6E7491;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.optionLabel {
+    color: #7C8DB0; /* This is equivalent to text-[#7C8DB0] */
+    font-size: 1rem; /* This is equivalent to text-base */
+    line-height: 1.5rem; /* This is equivalent to leading-6 */
+}
+.optionControls {
+    display: flex;
+    align-items: center; /* This is equivalent to items-center */
+    gap: 1rem; /* This is equivalent to gap-4 */
+}
+.optionButton {
+    border: 2px solid #605DEC; /* This is equivalent to border-2 border-[#605DEC] */
+    padding-left: 0.5rem; /* This is equivalent to px-2 */
+    padding-right: 0.5rem; /* This is equivalent to px-2 */
+    color: #7C8DB0; /* This is equivalent to text-[#7C8DB0] */
+    background-color: #FFFFFF;
+}
+
+.optionButton:disabled {
+    cursor: not-allowed; /* This is equivalent to disabled:cursor-not-allowed */
+}
+
+.custom-class {
+    border: 2px solid #605DEC; /* This is equivalent to border-2 border-[#605DEC] */
+    padding-left: 0.5rem; /* This is equivalent to px-2 */
+    padding-right: 0.5rem; /* This is equivalent to px-2 */
+    color: #7C8DB0; /* This is equivalent to text-[#7C8DB0] */
+}
+
+@media (min-width: 1024px) {
+    .buttons {
+        flex-direction: row;
+        height: 100%;
+    }
+    .departure {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .person, .placeInput, .date{
+        height: 100%;
+    }
+    .drop, .optionsMenu{
+        top: 60px;
+    }
+}

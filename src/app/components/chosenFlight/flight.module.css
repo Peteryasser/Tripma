@@ -1,0 +1,120 @@
+.card {
+    /* data row / flights in cart */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 8px;
+
+width: 400px;
+height: 122px;
+
+/* True White */
+background: #FFFFFF;
+/* Purple Extra Light */
+border: 1px solid #E9E8FC;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-top: 15px;
+
+}
+
+.h2 {
+    color: #272f3f;
+    font-weight: 400; /* Equivalent to font-normal */
+    font-size: 0.75rem; /* Assuming 1rem = 16px, this is equivalent to text-xs */
+    margin: 5px 0;
+}
+
+.p{
+    color: #7C8DB0;
+    font-weight: 400; /* Equivalent to font-normal */
+    font-size: 0.75rem; /* Assuming 1rem = 16px, this is equivalent to text-xs */
+    margin: 5px 0;
+}
+.tail {
+    /* Flight details */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+position: absolute;
+/* align-items: flex-start; */
+padding-left: 200px;
+padding-bottom: 1000px;
+gap: 4px;
+
+width: 148px;
+height: 74px;
+
+
+}
+.start {
+    /* Airline details */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 148px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+}
+.size {
+   /* Hawaiian Airlines */
+
+width: 40px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+
+}
+
+
+.gap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Assuming a base spacing scale where 1 unit = 0.25rem */
+}
+
+.seb{
+    
+}
+
+/* Media query for medium screens */
+@media (min-width: 768px) {
+    .h2 {
+        font-size: 1rem; /* Equivalent to text-base */
+    }
+    .tail {
+        align-items: flex-end;
+    }
+    .size {
+        width: 2.25rem; /* Equivalent to w-9 */
+        height: 2.25rem; /* Equivalent to h-9 */
+    }
+}

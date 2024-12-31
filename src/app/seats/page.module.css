@@ -1,0 +1,671 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 3000;
+  background-color: white;
+}
+
+.dimBack{
+  display: flex;
+  width: 100%;
+  height: 3000;
+ /* Modal Overlay */
+
+position: absolute;
+
+background: rgba(82, 82, 122, 0.2);
+
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  top: -50;
+
+  overflow: hidden; /* Prevents the text or other content from overflowing */
+}
+
+.right {
+  position: fixed; /* Sticks to the viewport */
+  top: 100; /* Fixed to the top */
+  right: 0; /* Fixed to the right */
+  width: 50%; /* Covers the right half */
+  min-width: 50%;
+  min-height: 1000; /* Full viewport height */
+  opacity: 1;
+  /* seat selector */
+  border-left: 2px solid #cbd4e6;
+  top: 0;
+
+  background: rgba(255, 255, 255, 0.5);
+  /* Background Blur */
+  backdrop-filter: blur(12px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.content {
+  position: relative;
+  top: -50;
+
+  /* seat selector */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin: 50;
+
+  background: rgba(255, 255, 255, 0.5);
+  /* Background Blur */
+  backdrop-filter: blur(12px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.right .content {
+  color: #333; /* Different text color for the right side */
+}
+
+.planeContainer {
+  position: relative;
+  width: 100%; /* Adjust the width as per your design */
+  height: 100%; /* Full height */
+  overflow: hidden;
+}
+
+.planeShape {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.rightLight {
+  position: absolute;
+  top: 200px;
+  left: 382px;
+  z-index: 2;
+  opacity: 1;
+  object-fit: cover;
+  width: 80px;
+  height: 90px;
+}
+
+.leftLight {
+  position: absolute;
+  top: 200px;
+  left: 290px;
+  z-index: 2;
+  opacity: 1;
+  object-fit: cover;
+  width: 80px;
+  height: 90px;
+}
+
+.grayLayer {
+  position: absolute;
+  top: 320;
+  left: 125;
+  z-index: 2;
+  opacity: 0.7; /* Adjust the opacity of the gray layer */
+  object-fit: contain;
+  width: 500; /* Adjust width as needed */
+  height: 65%; /* Set height to cover the container */
+}
+
+.seatGrid {
+  position: absolute;
+  top: 16%; /* Adjust position */
+  left: 275px;
+  width: 180;
+  z-index: 3;
+  display: grid;
+  grid-template-rows: repeat(5, 50px); /* 5 rows */
+  grid-gap: 10px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.ecSeatGrid {
+  position: absolute;
+  top: 27%; /* Adjust position */
+  left: 275px;
+  width: 180;
+  z-index: 3;
+  display: grid;
+  grid-template-rows: repeat(5, 50px); /* 5 rows */
+  grid-gap: 10px;
+  background-color: white;
+  border-radius: 15px;
+
+  padding: 10px;
+}
+.ecSeat {
+  cursor: pointer;
+  z-index: 4;
+  /* .base / economy */
+
+  /* Purple Blue Gradient */
+  background: linear-gradient(180deg, #605dec 0%, #2a26d9 100%);
+  border-radius: 4px;
+}
+
+.selectedSeat {
+  /* .base / economy */
+
+  /* Pink Gradient */
+  background: linear-gradient(180deg, #eb568c 0%, #ed5e76 100%);
+  border-radius: 4px;
+}
+.ecNoSeat {
+  /* .base / economy */
+
+  /* Purple Extra Light */
+  background: #e9e8fc;
+  border-radius: 4px;
+}
+
+.noSeat {
+  /* width: 40;
+  background: #E9E8FC;
+border-radius: 4px;
+z-index: 4; */
+  z-index: 4;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ecRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seat {
+  cursor: pointer;
+  z-index: 4;
+}
+
+.seatNumber {
+  color: rgb(130, 130, 130);
+  font-size: medium;
+  padding-top: 10;
+}
+.ecSeatNumber {
+  color: rgb(130, 130, 130);
+
+  padding: 10;
+}
+
+.exit {
+  color: #a1b0cc;
+  margin: 10;
+}
+
+.logo {
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+.logo:focus,
+.logo:active {
+  border: none;
+}
+
+.header {
+  /* Progress step header / default */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 100%;
+  height: 88px;
+
+  /* Grey / 900 */
+  background: #27273f;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.seperator {
+  position: absolute;
+  border-left: 5px solid #ff0000;
+  height: 88;
+  top: 0;
+}
+
+.from {
+  /* Progress step header / default */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 25%;
+  height: 88px;
+
+  /* Grey / 900 */
+  background: #27273f;
+}
+
+.to {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 25%;
+  height: 88px;
+
+  /* Grey / 900 */
+  background: #27273f;
+}
+
+.depart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 25%;
+  height: 88px;
+
+  /* Grey / 900 */
+  background: #27273f;
+  background-color: #605dec;
+}
+
+.city {
+  /* Progress step header / default */
+
+  position: absolute;
+  color: white;
+  top: 10px;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+.cun {
+  /* Progress step header / default */
+
+  position: absolute;
+  color: rgb(227, 227, 227);
+  padding-left: 40px;
+}
+
+.lable {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  padding-left: 40px;
+  font-size: large;
+  top: 20;
+}
+
+.ecoSection {
+  /* seat selector */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 50%;
+
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.5);
+  /* Background Blur */
+  backdrop-filter: blur(12px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.busSection {
+  /* seat selector */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin-left: 50;
+
+  position: relative;
+  width: 50%;
+
+  background: rgba(255, 255, 255, 0.5);
+  /* Background Blur */
+  backdrop-filter: blur(12px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.ecoHead {
+  /* Header */
+
+  /* Header H4 */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  margin: 0;
+  /* Grey / 600 */
+  color: #6e7491;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.description {
+  /* description */
+
+  width: 250px;
+  height: 57px;
+
+  /* Body Small */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* Grey / 400 */
+  color: #7c8db0;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ecoAdv {
+  position: absolute;
+  top: 290;
+}
+
+.busAdv {
+  position: absolute;
+  top: 283;
+}
+
+.image {
+  position: relative;
+}
+
+.footer {
+  /* navigation / footer */
+
+  position: relative;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+  margin-right: 50;
+
+  /* Purple White Light */
+  background: #fafafe;
+  border-top: #cbd4e6 solid 1px;
+
+  /* Inside auto layout */
+  bottom: -150;
+  height: 100px;
+}
+
+.passInfo {
+  /* content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.title {
+  /* label */
+
+  width: 160px;
+  height: 19px;
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  /* Grey / 400 */
+  color: #7c8db0;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.name {
+  /* name */
+
+  width: 118px;
+  height: 25px;
+  margin-top: 0;
+  margin-left: -45;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* Grey / 600 */
+  color: #6e7491;
+}
+
+.save {
+  /* button */
+  position: absolute;
+  left: 400;
+  bottom: 35;
+
+  box-sizing: border-box;
+
+  width: 148px;
+  height: 48px;
+
+  /* Purple Blue */
+  border: 1px solid #605dec;
+  color: #605dec;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.next {
+  position: absolute;
+  left: 590;
+  bottom: 35;
+
+  box-sizing: border-box;
+
+  width: 120px;
+  height: 48px;
+
+  /* Purple Blue */
+  border: 1px solid #605dec;
+  color: white;
+  background-color: #605dec;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.ecoBadge {
+  /* Tripma */
+  /* Tripma */
+
+  position: relative;
+  height: 20;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  margin-left: 30;
+  border-radius: 5;
+  padding: 4;
+  padding-top: 0;
+  /* True White */
+  color: white;
+  background-color: #2a26d9;
+}
+
+.busBadge {
+  position: relative;
+  z-index: 90;
+  height: 20;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  margin-left: 30;
+  border-radius: 5;
+  padding: 4;
+  padding-top: 0;
+  /* True White */
+  color: white;
+  background-color: #0db00d;
+  z-index: 90px;
+}
+
+.upgrade {
+  /* Modal Dialog */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items:first baseline;
+  padding: 40px;
+  gap: 12px;
+
+  position: fixed;
+  z-index: 100;
+  width: 548px;
+  height: 267px;
+  left: 446px;
+  top: 280px;
+  background-color: white;
+
+  /* True White */
+  /* Grey / 200
+
+Used for outlines or inactive buttons
+
+*/
+  border: 1px solid #cbd4e6;
+  /* elevation / medium */
+  box-shadow: 0px 2px 4px rgba(7, 4, 146, 0.1),
+    0px 24px 60px rgba(6, 47, 125, 0.05), 0px 12px 24px rgba(27, 59, 119, 0.05);
+  border-radius: 12px;
+}
+
+.upTitle{
+ /* Title row */
+
+padding: 0px;
+margin-top: 0;
+width: 468px;
+height: 32px;
+color: rgb(81, 81, 81);
+font-size: large;
+font-weight: bold;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.upDes{
+  /* description */
+
+width: 400px;
+height: 75px;
+
+/* Body Large */
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+/* Grey / 400 */
+color: #7C8DB0;
+margin-top: -20;
+}
+
+.upButtons{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.cancle{
+ /* Actions */
+
+position: relative;
+background-color: white;
+border-color: #605DEC;
+color: #605DEC;
+border-radius: 4px;
+
+width: 90px;
+height: 40px;
+right: -200;
+cursor: pointer;
+
+}
+
+.upBut{
+  /* button */
+position: relative;
+width: 150px;
+height: 40px;
+
+/* Purple Blue */
+background: #605DEC;
+border-color: #605DEC;
+border-radius: 4px;
+
+color: white;
+right: -250;
+cursor: pointer;
+}

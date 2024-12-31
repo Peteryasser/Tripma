@@ -1,0 +1,276 @@
+.header {
+    display: flex;       /* flex */
+    flex-direction: row;
+    /* Auto layout */
+    padding: 0;
+    justify-content: start;
+    min-height: 70px;
+    height: fit-content;
+    max-height: 230px;
+    /*margin-bottom: 24px;*/
+}
+
+.flight{
+    border-radius: 0.25rem;
+    border-color: #404040;
+}
+
+.buttonS{
+    width: 150px;
+    background-color: #ffffff;
+    color: #605DEC;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /*padding: 0 20px;*/
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #605DEC;
+    cursor: pointer;
+    min-height: 48px;
+    position: absolute;
+    left: 800px;
+    top: 850px; 
+    
+    
+}
+
+.container{
+    margin:20px 64px;
+    height:48px;
+}
+
+.priceGrid{
+    
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1px;
+    gap: 1px;
+
+    position: absolute;
+    width: 397px;
+    height: 247px;
+    left: 1000px;
+    top: 350px;
+
+    /* Purple Extra Light */
+    background: #E9E8FC;
+    /* Purple Extra Light */
+    border: 1px solid #E9E8FC;
+    border-radius: 12px;
+
+}
+
+
+.priceGridTitle {
+    position: absolute;
+    left: 1000px;
+    top: 290px;
+    color:#404040;
+}
+
+
+.priceHistory{
+    
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1px;
+    gap: 1px;
+
+    position: absolute;
+    width: 397px;
+    height: 247px;
+    left: 1000px;
+    top: 650px;
+
+    /* Purple Extra Light */
+    background: #E9E8FC;
+    /* Purple Extra Light */
+    border: 1px solid #E9E8FC;
+    border-radius: 12px;
+
+}
+
+
+.priceHistoryTitle {
+    position: absolute;
+    left: 1000px;
+    top: 605px;
+    color:#404040;
+}
+
+.rating{
+    position: absolute;
+    left: 1010px;
+    top: 950px;
+}
+
+.bye{
+    position: relative;
+    left: 30;
+    background-color: #0bcb38;
+    color: white;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: #0bcb38;
+}
+
+.firstText{
+    position: absolute;
+    margin-top: 20px;
+    min-width: 350;
+    
+}
+
+.secondText{
+    position: absolute;
+    top: 100px;
+    margin-top: 5px;
+    color: rgb(162, 162, 162);
+    min-width: 350px;
+}
+
+.map{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1px;
+    gap: 1px;
+
+    position: relative;
+    
+    left: 50px;
+    top: 50px;
+    width: 900px;
+
+    /* Purple Extra Light */
+    background: #E9E8FC;
+    /* Purple Extra Light */
+    border: 1px solid #E9E8FC;
+    border-radius: 12px;
+}
+
+.imageContainer{
+    position: relative;
+    display: inline-block;
+}
+
+.textOverlay{
+    position: absolute;
+    top: 128px;
+    left: 345px;
+    color: #4c49c7;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 900;
+
+}
+
+.textOverlayTwo{
+    position: absolute;
+    top: 124px;
+    left: 557px;
+    color: #4c49c7;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 900;
+    
+}
+
+.chosen{
+
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+
+    position: absolute;
+    width: 400px;
+    height: 236px;
+    left: 976px;
+    top: 335px;
+
+}
+
+.ulS{
+    list-style: none;
+    
+}
+
+.save{
+    /* button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+
+position: absolute;
+width: 160px;
+height: 48px;
+right: 140px;
+top: 650px;
+
+/* Purple Blue */
+border: 1px solid #605DEC;
+color: #605DEC;
+font-size:medium;
+border-radius: 4px;
+background-color: white;
+cursor: pointer;
+
+}
+
+
+.info{
+
+    box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+
+position: absolute;
+width: 170px;
+height: 48px;
+right: 140px;
+top: 760px;
+
+/* Purple Blue */
+border: 1px solid #605DEC;
+color: white;
+font-size:small;
+border-radius: 4px;
+background-color: #605DEC;
+cursor: pointer;
+
+}
+
+/* Responsive design for large screens */
+@media  (max-width: 1024px) {
+    .container{
+        width: 100%;
+        margin-top: 80px;
+        height: 240px;
+    }
+}
